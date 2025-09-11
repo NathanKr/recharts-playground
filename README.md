@@ -9,7 +9,9 @@
 
 
 <h2>Motivation</h2>
-....
+in my-pension repo i use react and i need charts to show e.g. how balance and month pension change with the desired income 62-67 value, so how to do it
+
+claude suggested recharts
 
 <h2>Key Takeaways</h2>
 <ul>
