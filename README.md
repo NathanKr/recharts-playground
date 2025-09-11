@@ -52,4 +52,3 @@ claude suggested recharts
     <li>...</li>
    
 </ul>
-
