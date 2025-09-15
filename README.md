@@ -24,7 +24,10 @@ claude suggested recharts
 
 
 <h2>Usage</h2>
-....
+
+```
+npm run dev
+```
 
 
 <h2>Technologies Used</h2>
