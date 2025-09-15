@@ -5,6 +5,10 @@
 > I prefer using ``` .... ``` over pre code
 > Demo section should include figures. Put figures under figs folder under root and reference it from README.md
 > If you think you need extra h2 section always ask for approval
+> Don't change existing section titles without permission
+> "Code Structure" section should contain code samples/examples, not just file tree
+> For code samples, put here what is the most important in this project
+> Provide samples with simple at first and most complex at the end
 
 # How to capture images
 

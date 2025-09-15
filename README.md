@@ -10,16 +10,9 @@
 
 <p>Created as a learning and prototyping tool for implementing charts in a pension calculation project. The goal was to understand how to visualize data showing how balance and monthly pension change with desired income values (ages 62-67). Recharts was selected as the charting library based on its React-native integration and feature set.</p>
 
-<h2>Key Features</h2>
+<h2>Key Takeaways</h2>
 
-<ul>
-    <li><strong>Simple Line Charts</strong>: Basic chart implementation</li>
-    <li><strong>CSS Layout Integration</strong>: Responsive chart layouts using CSS modules</li>
-    <li><strong>Enhanced Charts</strong>: Charts with axes, labels, tooltips, and grid lines</li>
-    <li><strong>Multi-line Charts</strong>: Displaying multiple data series on the same chart</li>
-    <li><strong>Responsive Design</strong>: Charts that adapt to container width</li>
-    <li><strong>Custom Styling</strong>: Thick lines, no dots, custom colors and legends</li>
-</ul>
+
 
 <h2>Installation</h2>
 
@@ -61,15 +54,36 @@ pnpm run lint
 
 <h2>Code Structure</h2>
 
+<p>Basic LineChart implementation:</p>
+
+```tsx
+<LineChart width={600} height={300} data={data1}>
+  <Line dataKey="y" />
+</LineChart>
 ```
-src/
-├── components/
-│   └── simple-sample-charts.tsx    # Main chart examples component
-├── styles/
-│   └── chart-layout.module.css     # Chart layout styles
-├── App.tsx                         # Main application component
-├── main.tsx                        # Application entry point
-└── App.css & index.css            # Global styles
+
+<p>Data transformation from arrays to chart format:</p>
+
+```tsx
+const x = [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1];
+const y1 = x.map((value) => value);
+const data1 = x.map((value, index) => ({ x: value, y: y1[index] }));
+```
+
+<p>Multi-line responsive chart with custom styling:</p>
+
+```tsx
+<ResponsiveContainer width="100%" height={300}>
+  <LineChart data={combinedData}>
+    <CartesianGrid strokeDasharray="3 3" />
+    <XAxis dataKey="x" label={{ value: "X Axis", position: "insideBottom", offset: -5 }} />
+    <YAxis label={{ value: "Y Axis", angle: -90, position: "insideLeft" }} />
+    <Tooltip />
+    <Legend verticalAlign="top" />
+    <Line dataKey="y1" stroke="green" strokeWidth={2} name="Line 1" dot={false} />
+    <Line dataKey="y2" stroke="brown" strokeWidth={2} name="Line 2" dot={false} />
+  </LineChart>
+</ResponsiveContainer>
 ```
 
 
