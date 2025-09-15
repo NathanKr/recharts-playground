@@ -1,6 +1,6 @@
-<h1>Recharts Playground</h1>
+<h1>Project Name</h1>
+Simple example of charts for react
 
-<p>A React playground project for exploring and demonstrating different chart implementations using the Recharts library.</p>
 
 <h2>Project Description</h2>
 
@@ -9,16 +9,6 @@
 <h2>Motivation</h2>
 
 <p>Created as a learning and prototyping tool for implementing charts in a pension calculation project. The goal was to understand how to visualize data showing how balance and monthly pension change with desired income values (ages 62-67). Recharts was selected as the charting library based on its React-native integration and feature set.</p>
-
-<h2>Key Takeaways</h2>
-
-<ul>
-    <li><strong>Data transformation is crucial</strong>: Converting arrays to chart-compatible objects using <code>map()</code> functions is essential for Recharts integration</li>
-    <li><strong>ResponsiveContainer enables responsive charts</strong>: Wrap charts in ResponsiveContainer to make them adapt to parent container width automatically</li>
-    <li><strong>Multi-line charts require structured data</strong>: Use objects with multiple data keys (y1, y2) and separate Line components with custom styling for multiple data series</li>
-</ul>
-
-
 
 <h2>Installation</h2>
 
@@ -106,6 +96,9 @@ const data1 = x.map((value, index) => ({ x: value, y: y1[index] }));
 
 <ul>
     <li><strong>Recharts doesn't provide layout solutions</strong>: You need CSS (like flexbox) to arrange multiple charts on a page - the package only handles individual chart rendering</li>
+    <li><strong>Data transformation is crucial</strong>: Converting arrays to chart-compatible objects using <code>map()</code> functions is essential for Recharts integration</li>
+    <li><strong>ResponsiveContainer enables responsive charts</strong>: Wrap charts in ResponsiveContainer to make them adapt to parent container width automatically</li>
+    <li><strong>Multi-line charts require structured data</strong>: Use objects with multiple data keys (y1, y2) and separate Line components with custom styling for multiple data series</li>
 </ul>
 
 <h2>References</h2>

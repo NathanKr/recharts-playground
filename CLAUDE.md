@@ -11,6 +11,7 @@
 > Provide samples with simple at first and most complex at the end
 > Key takeaways are 2-3 most important issues that developer can learn from this repo
 > Points of Interest should deliver unique value - not repeat Key Takeaways
+> The project name should simply represent the core of the repo
 
 # How to capture images
 
