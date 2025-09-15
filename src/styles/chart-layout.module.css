@@ -1,0 +1,17 @@
+/* ChartLayout.module.css */
+.chartContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.topChart {
+  width: 100%;
+  /* Additional styles for the top chart container */
+}
+
+.bottomChart {
+  width: 100%;
+  /* Additional styles for the bottom chart container */
+}

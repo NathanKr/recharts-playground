@@ -9,13 +9,29 @@ import {
   YAxis,
 } from "recharts";
 
-export default function Charts() {
+import styles from "../styles/chart-layout.module.css";
+
+export default function SimpleSampleCharts() {
   return (
     <>
       <h2>Most simple line chart</h2>
       <LineChart width={600} height={300} data={data1}>
         <Line dataKey="y" />
       </LineChart>
+      <h2>Use css layout</h2>
+      <div className={styles.chartContainer}>
+        <div className={styles.topChart}>
+          <LineChart width={600} height={300} data={data1}>
+            <Line dataKey="y" />
+          </LineChart>
+        </div>
+        <div className={styles.bottomChart}>
+          <LineChart width={600} height={300} data={data1}>
+            <Line dataKey="y" />
+          </LineChart>
+        </div>
+      </div>
+
       {/* add x,y axis and grid */}
       <h2>Better line chart : axis , labels , tooltip</h2>
       <LineChart width={600} height={300} data={data1}>

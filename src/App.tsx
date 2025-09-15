@@ -1,10 +1,10 @@
-import Charts from "./components/charts";
-import './App.css'
+import SimpleSampleCharts from "./components/simple-sample-charts";
+import "./App.css";
 
 function App() {
   return (
     <div>
-      <Charts />
+      <SimpleSampleCharts />
     </div>
   );
 }
