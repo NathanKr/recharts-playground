@@ -102,6 +102,12 @@ const data1 = x.map((value, index) => ({ x: value, y: y1[index] }));
 
 
 
+<h2>Points of Interest</h2>
+
+<ul>
+    <li><strong>Recharts doesn't provide layout solutions</strong>: You need CSS (like CSS Modules) to arrange multiple charts on a page - the package only handles individual chart rendering</li>
+</ul>
+
 <h2>References</h2>
 
 <ul>
