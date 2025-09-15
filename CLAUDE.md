@@ -9,6 +9,7 @@
 > "Code Structure" section should contain code samples/examples, not just file tree
 > For code samples, put here what is the most important in this project
 > Provide samples with simple at first and most complex at the end
+> Key takeaways are 2-3 most important issues that developer can learn from this repo
 
 # How to capture images
 

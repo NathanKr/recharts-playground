@@ -12,6 +12,12 @@
 
 <h2>Key Takeaways</h2>
 
+<ul>
+    <li><strong>Data transformation is crucial</strong>: Converting arrays to chart-compatible objects using <code>map()</code> functions is essential for Recharts integration</li>
+    <li><strong>ResponsiveContainer enables responsive charts</strong>: Wrap charts in ResponsiveContainer to make them adapt to parent container width automatically</li>
+    <li><strong>Multi-line charts require structured data</strong>: Use objects with multiple data keys (y1, y2) and separate Line components with custom styling for multiple data series</li>
+</ul>
+
 
 
 <h2>Installation</h2>
