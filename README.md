@@ -102,16 +102,6 @@ const data1 = x.map((value, index) => ({ x: value, y: y1[index] }));
 
 
 
-<h2>Points of Interest</h2>
-
-<ul>
-    <li><strong>ResponsiveContainer</strong>: Enables charts to resize with their container</li>
-    <li><strong>CSS Modules</strong>: Scoped styling prevents style conflicts</li>
-    <li><strong>Data Transformation</strong>: Converting arrays into chart-compatible objects</li>
-    <li><strong>Multiple Data Series</strong>: Combining different datasets on single chart</li>
-    <li><strong>Custom Chart Configuration</strong>: Detailed control over appearance and behavior</li>
-</ul>
-
 <h2>References</h2>
 
 <ul>

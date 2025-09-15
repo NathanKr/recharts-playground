@@ -10,6 +10,7 @@
 > For code samples, put here what is the most important in this project
 > Provide samples with simple at first and most complex at the end
 > Key takeaways are 2-3 most important issues that developer can learn from this repo
+> Points of Interest should deliver unique value - not repeat Key Takeaways
 
 # How to capture images
 
